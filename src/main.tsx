@@ -7,8 +7,10 @@ import {
 import "./index.css";
 
 import Root from "./routes/root.tsx";
-import ErrorPage from "./errorPage.tsx"
+import ErrorPage from "./errorPage.tsx";
 import About from "./routes/about.tsx"
+import Resume from "./routes/resume.tsx"
+import Projects, {loader as ProjectLoader} from "./routes/projects.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,15 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "resume",
+        element: <Resume />,
+      },
+      {
+        path: "projects/:project_id?",
+        element: <Projects />,
+        loader: ProjectLoader,
       },
     ],
   },
