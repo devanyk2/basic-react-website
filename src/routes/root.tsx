@@ -9,7 +9,7 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-                <Link to={`/about`}>About Me</Link>
+                <Link to={`/`}>About Me</Link>
               </li>
               <li>
                 <Link to={`/projects/`}>Projects</Link>

@@ -1,3 +1,8 @@
+/* 
+Change the file name and component name. 
+Then fillout the content div with any valid HTML. 
+You may also add any valid HTML (or REACT components).
+*/
 export default function FoodGis() {
     return (
       <>

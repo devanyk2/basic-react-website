@@ -1,5 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 
+
+/* TODO: Import project components here */
 import FoodGis from "../projects/foodGis";
 import LandScapeDesign from "../projects/landScapeDesign";
 
@@ -18,6 +20,9 @@ export async function loader({params}: any): Promise<projectLoader>{
 
 export default function Projects() {
 
+  /* TODO: reference components here, and create links below in the form
+    <li><Link to="/projects/{component string}">{project tagline}</Link></li>
+  */
   const componentMap: componentDict = {
     "foodgis": <FoodGis/>,
     "landscapedesign": <LandScapeDesign/>,

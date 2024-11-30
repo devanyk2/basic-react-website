@@ -1,4 +1,8 @@
+
 export default function About() {
+
+    /* TODO: replace email with your own */
+    let emailString: string = "mailto:fakeuser@fakeemail.com" ;
     return (
       <>
         <div id="content">
@@ -8,7 +12,7 @@ export default function About() {
             a condimentum ex tempor. Duis dolor tortor, tincidunt a nisl vel, accumsan eleifend dolor. Integer egestas eros id mattis interdum. 
             Praesent vitae lobortis eros, sit amet lacinia ante. In imperdiet tortor non tortor dictum vestibulum. </p>
             <div>
-              <p>Want to collaborate? <a href="mailto:lili@fakeemail.com" target="_blank">Send me an Email!</a></p>
+              <p>Want to collaborate? <a href={emailString} target="_blank">Send me an Email!</a></p>
             </div>
         </div>
       </>
